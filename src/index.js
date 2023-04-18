@@ -12,6 +12,7 @@
 // let let1 = 'bbb';
 // console.log(let1);
 
+// オブジェクトで生成しているから変更できる
 // const val4 = {
 //   name: 'aaa',
 //   age: 22,
@@ -79,7 +80,6 @@
 // console.log(message4);
 
 // デフォルト値
-
 // const sayHello = (name = 'ゲスト') => {
 //   return console.log(`こんにちは${name}さん`);
 // };
@@ -87,6 +87,7 @@
 // sayHello('Gota');
 // sayHello();
 
+//スプレッド構文
 // const arr1 = [1,2];
 // console.log(arr1);
 // console.log(...arr1);
@@ -95,6 +96,7 @@
 //   return console.log(num1 + num2);
 // };
 
+// 同じことをしている
 // sumFunc(arr1[0], arr1[1]);
 // sumFunc(...arr1);
 
@@ -103,7 +105,9 @@
 // console.log(num1);
 // console.log(num2);
 // console.log(arr3);
+// console.log(...arr3);
 
+// スプレッド構文だとコピーを渡すが、arr4 = arr7のような書き方だと参照渡しとなり、コピー元も変えてしまうことになる
 // const arr4 = [10, 20];
 // const arr5 = [30, 40];
 
@@ -124,6 +128,8 @@
 //   return num;
 // })
 // console.log(arr2);
+
+// const arr2 = arr.map((num) => console.log(num));
 
 // arr.map((num, i) => {console.log(`${i + 1}番目は${num}です`)});
 
@@ -146,9 +152,7 @@
 // console.log(val1);
 
 // const num = 1300;
-
 // const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください';
-
 // console.log(formattedNum);
 
 // const checkSum = (num1, num2) => {
