@@ -27,7 +27,6 @@ const onClickAdd = () => {
       const deleteTarget = backButton.closest('li');
       document.getElementById('complete-list').removeChild(deleteTarget);
 
-      console.log(deleteTarget);
       const text = deleteTarget.querySelector('.list-row p').innerText;
     });
 
